@@ -5,10 +5,39 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"test-github-dependency@git+ssh://git@github.com:angel-git/test-github-dependency.git#e457095d836f387a93f42c86bcf14de14be3b375":
+"js-tokens@npm:^3.0.0 || ^4.0.0":
+  version: 4.0.0
+  resolution: "js-tokens@npm:4.0.0"
+  checksum: 8a95213a5a77deb6cbe94d86340e8d9ace2b93bc367790b260101d2f36a2eaf4e4e22d9fa9cf459b38af3a32fb4190e638024cf82ec95ef708680e405ea7cc78
+  languageName: node
+  linkType: hard
+
+"loose-envify@npm:^1.1.0":
+  version: 1.4.0
+  resolution: "loose-envify@npm:1.4.0"
+  dependencies:
+    js-tokens: ^3.0.0 || ^4.0.0
+  bin:
+    loose-envify: cli.js
+  checksum: 6517e24e0cad87ec9888f500c5b5947032cdfe6ef65e1c1936a0c48a524b81e65542c9c3edc91c97d5bddc806ee2a985dbc79be89215d613b1de5db6d1cfe6f4
+  languageName: node
+  linkType: hard
+
+"react@npm:^18.2.0":
+  version: 18.2.0
+  resolution: "react@npm:18.2.0"
+  dependencies:
+    loose-envify: ^1.1.0
+  checksum: 88e38092da8839b830cda6feef2e8505dec8ace60579e46aa5490fc3dc9bba0bd50336507dc166f43e3afc1c42939c09fe33b25fae889d6f402721dcd78fca1b
+  languageName: node
+  linkType: hard
+
+"test-github-dependency@git+ssh://git@github.com:angel-git/test-github-dependency.git#6f276b86b452e13e822d0b44f914667b8059c436":
   version: 1.0.0
-  resolution: "test-github-dependency@git+ssh://git@github.com:angel-git/test-github-dependency.git#commit=e457095d836f387a93f42c86bcf14de14be3b375"
-  checksum: 607a4d9d998f4c96a136764eb95c709014772a1924ce2816a92ac428b074e1b3913af1eb77dc5dfba8924b0106e4c293badfa1e23be2ef2283d362a0cc777438
+  resolution: "test-github-dependency@git+ssh://git@github.com:angel-git/test-github-dependency.git#commit=6f276b86b452e13e822d0b44f914667b8059c436"
+  dependencies:
+    react: ^18.2.0
+  checksum: 7efe379aba8b47d748d18078cabbe0ba9ff7d0747381c28bd188e7e2cfc5c7b809a5dffe6244d4e8a9707b4996ac6b246c92836690ea25f390000d3bc0a18704
   languageName: node
   linkType: hard
 
@@ -16,6 +45,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "yarn-issue@workspace:."
   dependencies:
-    test-github-dependency: "git+ssh://git@github.com:angel-git/test-github-dependency.git#e457095d836f387a93f42c86bcf14de14be3b375"
+    test-github-dependency: "git+ssh://git@github.com:angel-git/test-github-dependency.git#6f276b86b452e13e822d0b44f914667b8059c436"
   languageName: unknown
   linkType: soft
