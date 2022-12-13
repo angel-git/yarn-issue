@@ -1,0 +1,9 @@
+{
+  "name": "yarn-issue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "test-github-dependency": "git+ssh://git@github.com:angel-git/test-github-dependency.git#e457095d836f387a93f42c86bcf14de14be3b375"
+  }
+}
