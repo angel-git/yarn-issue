@@ -32,6 +32,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"test-github-dependency@git+https://github.com/angel-git/yarn-issue.git#master":
+  version: 1.0.0
+  resolution: "test-github-dependency@https://github.com/angel-git/yarn-issue.git#commit=5e9741f48a1497c70be56e9a7aa4909f27ef0784"
+  dependencies:
+    test-github-dependency: "git+ssh://git@github.com:angel-git/test-github-dependency.git#6f276b86b452e13e822d0b44f914667b8059c436"
+  checksum: e5693d3a25b3ae2e0b27ffe66e85fdb4f45138d8c961781f8a86ba539786821926eab6b2cf952eeba3306a8b683d01c37fd8920888d6dcbb5873558ff454ce87
+  languageName: node
+  linkType: hard
+
 "test-github-dependency@git+ssh://git@github.com:angel-git/test-github-dependency.git#6f276b86b452e13e822d0b44f914667b8059c436":
   version: 1.0.0
   resolution: "test-github-dependency@git+ssh://git@github.com:angel-git/test-github-dependency.git#commit=6f276b86b452e13e822d0b44f914667b8059c436"
@@ -45,6 +54,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "yarn-issue@workspace:."
   dependencies:
-    test-github-dependency: "git+ssh://git@github.com:angel-git/test-github-dependency.git#6f276b86b452e13e822d0b44f914667b8059c436"
+    test-github-dependency: "git+https://github.com/angel-git/yarn-issue.git#master"
   languageName: unknown
   linkType: soft
