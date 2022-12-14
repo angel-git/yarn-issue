@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "test-github-dependency": "git+https://github.com/angel-git/yarn-issue.git#master"
+    "test-github-dependency": "git+ssh://git@github.com:angel-git/test-github-dependency.git#a9558b728dfcee08264f221211d859e3417a4971"
   },
   "packageManager": "yarn@3.3.0"
 }
